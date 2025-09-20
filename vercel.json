@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "name": "lumen-gui-builder",
+  "builds": [
+    { "src": "next.config.js", "use": "@vercel/next" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/" },
+    { "src": "/dashboard", "dest": "/dashboard" },
+    { "src": "/login", "dest": "/login" },
+    { "src": "/signup", "dest": "/signup" }
+  ],
+  "env": {
+    "NEXT_PUBLIC_APP_NAME": "Lumen",
+    "NEXT_PUBLIC_APP_DESCRIPTION": "Intuitive GUI Menu Maker"
+  },
+  "github": {
+    "silent": true
+  },
+  "framework": "nextjs"
+}
